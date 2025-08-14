@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthenticationController;
@@ -27,4 +28,7 @@ Route::prefix('admin')->middleware(['auth', 'role:admin'])->group(function () {
 
     //CRUD users
     Route::resource('users', UserController::class);
+
+    //CRUD departments
+    Route::resource('departments', DepartmentController::class);
 });
