@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Venue extends Model
 {
-    //
+    protected $fillable = ['name', 'location'];
+
+    public function examinations()
+    {
+        return $this->hasMany(Examination::class);
+    }
 }

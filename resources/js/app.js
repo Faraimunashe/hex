@@ -19,5 +19,5 @@ createInertiaApp({
       .use(SnackbarService)
       .mount(el);
   },
-  title: title => `${title} - MSU Canteen`,
+  title: title => `${title} - Hex Timetables`,
 });
