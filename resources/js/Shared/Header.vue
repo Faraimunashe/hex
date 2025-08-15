@@ -19,12 +19,6 @@
 
     <!-- Right Icons & Dropdown -->
     <div class="flex items-center gap-4 relative">
-      <button class="hover:text-blue-600 transition"><i class="fas fa-calendar-alt text-gray-600 text-lg"></i></button>
-      <button class="hover:text-blue-600 transition"><i class="fas fa-comment-dots text-gray-600 text-lg"></i></button>
-      <button class="relative hover:text-blue-600 transition">
-        <i class="fas fa-bell text-gray-600 text-lg"></i>
-        <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white"></span>
-      </button>
 
       <!-- Profile Dropdown Trigger -->
       <div class="relative">

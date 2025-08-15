@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    protected $fillable = ['user_id', 'regnum', 'firstnames', 'surname', 'gender'];
+    protected $fillable = ['user_id', 'department_id', 'regnum', 'firstnames', 'surname', 'gender'];
 
     public function user()
     {
@@ -16,5 +16,10 @@ class Student extends Model
     public function modules()
     {
         return $this->belongsToMany(Module::class, 'student_modules');
+    }
+
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
     }
 }

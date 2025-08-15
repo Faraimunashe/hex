@@ -14,12 +14,13 @@ class AuthenticationController extends Controller
     {
         if(Auth::user()->hasRole('admin'))
         {
+
             return redirect()->route('dashboards');
         }elseif(Auth::user()->hasRole('lecturer'))
         {
-            return redirect()->route('sales.index');
+            return redirect()->route('timetables.index');
         }else{
-            dd("Undefined");
+            return redirect()->route('timetable.index');
         }
     }
 

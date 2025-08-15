@@ -13,7 +13,7 @@
                     <h2 class="text-2xl font-extrabold text-gray-900">Welcome to Timetables</h2>
                     <p class="text-gray-500">
                         Don’t have an account?
-                        <a href="#" class="text-blue-600 hover:underline">Register.</a>
+                        <a href="#" class="text-blue-600 hover:underline">Contact the administrator.</a>
                     </p>
                 </div>
 

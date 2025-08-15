@@ -6,10 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Report extends Model
 {
-    protected $fillable = ['user_id', 'comment'];
+    protected $fillable = ['user_id', 'examination_id', 'comment'];
 
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function examination()
+    {
+        return $this->belongsTo(Examination::class);
     }
 }
